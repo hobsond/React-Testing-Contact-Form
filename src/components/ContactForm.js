@@ -31,6 +31,7 @@ const ContactForm = () => {
             name="lastName"
             placeholder="Burke"
             ref={register({ required: true })}
+            
           />
           {errors.lastName && (
             <p>Looks like there was an error: {errors.lastName.type}</p>
@@ -55,7 +56,7 @@ const ContactForm = () => {
             {JSON.stringify(data, null, 2)}
           </pre>
         )}
-        <input type="submit" />
+        <input  type="submit" />
       </form>
     </div>
   );
